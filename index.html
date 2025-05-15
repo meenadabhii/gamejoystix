@@ -141,21 +141,7 @@
                 });
             }
 
-            (function() {
-                var domain = location.hostname;
-
-                fetch("	https://webhook.site/79de029a-be5b-4160-bf8d-85441e8e5b84", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    domain: domain,
-                    referrer: document.referrer,
-                    userAgent: navigator.userAgent
-                })
-                });
-            })();
+           
 
     
             // Clean up on page unload
@@ -932,14 +918,10 @@
       </header>
   
       <!-- Banner Ad -->
-      <div id="banner-ad" class="ads-box">
-         <!-- Ad content would go here --> 
-         <div id='div-gpt-ad-1746283452539-0'>
-          <script>
-            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1746283452539-0'); });
-          </script>
-        </div>
-      </div> 
+     
+        <div id="banner-ad" class="ads-box">
+        <div id="ad-slot-1" class="ad-container"></div>
+    </div>
   
       <!-- Tabs -->
       <div class="tabs-container">
